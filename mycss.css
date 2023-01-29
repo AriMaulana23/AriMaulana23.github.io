@@ -12,102 +12,458 @@ body {
   justify-content: center;
 }
 
-.container .container-left {
-  width: 450px;
-  height: 512px;
-  background-color: rgb(255, 255, 255);
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  box-shadow: 0px 0px 7px rgb(102, 102, 102);
+/* tablets */
+@media (max-width: 991px) {
+  .container-right,
+  .container-right h1,
+  .container-right p,
+  .container-right img {
+    display: none;
+  }
+
+  .container .container-left {
+    width: 90%;
+    height: 512px;
+    background-color: rgb(255, 255, 255);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 0px 0px 7px rgb(102, 102, 102);
+    padding-top: 1rem;
+  }
+
+  .container-left h4 {
+    margin-top: 3rem;
+    margin-left: 3.5rem;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .container-left form .LName {
+    position: absolute;
+    left: 0;
+    margin-left: 4.8rem;
+  }
+
+  .container-left form .iUser {
+    position: absolute;
+    display: block;
+    border: none;
+    width: 75%;
+    border-bottom: solid 1px rgb(0, 0, 0);
+    background-color: transparent;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    text-align: center;
+  }
+
+  .container-left form .LPass {
+    position: absolute;
+    margin-top: 4rem;
+    left: 0;
+    margin-left: 5rem;
+  }
+
+  .container-left form .iPass {
+    position: absolute;
+    display: block;
+    border: none;
+    width: 75%;
+    border-bottom: solid 1px rgb(0, 0, 0);
+    background-color: transparent;
+    margin-top: 5.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+  }
+
+  form .eye-unlock {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    margin-top: 5rem;
+    margin-right: 3rem;
+  }
+
+  form .forgot {
+    position: absolute;
+    text-decoration: none;
+    margin-top: 8rem;
+    margin-right: -3rem;
+  }
+
+  form .submit {
+    width: 220px;
+    background-image: linear-gradient(150deg, rgb(63, 34, 255), rgb(48, 183, 251), rgb(255, 102, 222));
+    color: white;
+    margin-top: 11rem;
+  }
+
+  form .register {
+    position: absolute;
+    margin-top: 20rem;
+  }
 }
 
-.container .container-right {
-  width: 678px;
-  height: 512px;
-  background-image: linear-gradient(180deg, rgb(158, 155, 252), rgb(143, 92, 173));
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  box-shadow: 2px 0px 7px rgb(102, 102, 102);
+/* dekstop kecil */
+
+@media (min-width: 992px) {
+  .container .container-left {
+    width: 40%;
+    height: 512px;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 0px 0px 7px rgb(102, 102, 102);
+    padding-top: 0.5rem;
+  }
+
+  .container .container-right {
+    width: 60%;
+    height: 512px;
+    background-image: linear-gradient(180deg, rgb(158, 155, 252), rgb(143, 92, 173));
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 2px 0px 7px rgb(102, 102, 102);
+  }
+
+  .container-right h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 48px;
+  }
+
+  .container-right p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Roboto Flex", sans-serif;
+    margin-top: -1vh;
+  }
+  .container-right img {
+    margin: 3rem auto auto 9rem;
+  }
+
+  .container-left h4 {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .container-left form .LName {
+    position: absolute;
+    margin-left: -13.3rem;
+  }
+
+  .container-left form .iUser {
+    position: absolute;
+    display: block;
+    border: none;
+    width: 75%;
+    border-bottom: solid 1px rgb(0, 0, 0);
+    background-color: transparent;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    text-align: center;
+  }
+
+  .container-left form .LPass {
+    position: absolute;
+    margin-top: 4rem;
+    margin-left: -13.3rem;
+  }
+
+  .container-left form .iPass {
+    position: absolute;
+    display: block;
+    border: none;
+    width: 75%;
+    border-bottom: solid 1px rgb(0, 0, 0);
+    background-color: transparent;
+    margin-top: 5.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+  }
+
+  form .forgot {
+    position: absolute;
+    text-decoration: none;
+    margin-top: 8rem;
+    margin-left: 10rem;
+  }
+
+  form .submit {
+    width: 220px;
+    background-image: linear-gradient(150deg, rgb(63, 34, 255), rgb(48, 183, 251), rgb(255, 102, 222));
+    color: white;
+    margin-top: 11rem;
+  }
+
+  form .eye-unlock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 18.5rem;
+    margin-top: 5rem;
+    width: 30px;
+  }
+
+  form .register {
+    position: absolute;
+    margin-top: 20rem;
+  }
 }
 
-.container-right h1 {
-  font-family: "Roboto Condensed", sans-serif;
-  color: white;
-  text-align: center;
-  margin-top: 4rem;
-  font-size: 48px;
+/* dekstop medium */
+
+@media (min-width: 1200px) {
+  .container .container-left {
+    width: 40%;
+    height: 512px;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 0px 0px 7px rgb(102, 102, 102);
+    padding-top: 1rem;
+  }
+
+  .container .container-right {
+    width: 60%;
+    height: 512px;
+    background-image: linear-gradient(180deg, rgb(158, 155, 252), rgb(143, 92, 173));
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 2px 0px 7px rgb(102, 102, 102);
+  }
+
+  .container-right h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 48px;
+  }
+
+  .container-right p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Roboto Flex", sans-serif;
+    margin-top: -1vh;
+  }
+  .container-right img {
+    margin: 3rem auto auto 12rem;
+  }
+
+  .container-left h4 {
+    margin-top: 3rem;
+    margin-left: 3.5rem;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .container-left form .LName {
+    position: absolute;
+    margin-right: 3.5rem;
+  }
+
+  .container-left form .iUser {
+    position: absolute;
+    display: block;
+    border: none;
+    width: 75%;
+    border-bottom: solid 1px rgb(0, 0, 0);
+    background-color: transparent;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    text-align: center;
+  }
+
+  .container-left form .LPass {
+    position: absolute;
+    margin-top: 4rem;
+    margin-right: 3.5rem;
+  }
+
+  .container-left form .iPass {
+    position: absolute;
+    display: block;
+    border: none;
+    width: 75%;
+    border-bottom: solid 1px rgb(0, 0, 0);
+    background-color: transparent;
+    margin-top: 5.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+  }
+
+  form .eye-unlock {
+    position: absolute;
+    width: 30px;
+    margin-left: 22.3rem;
+  }
+
+  form .forgot {
+    position: absolute;
+    text-decoration: none;
+    margin-top: 8rem;
+    margin-right: -3rem;
+  }
+
+  form .submit {
+    width: 220px;
+    background-image: linear-gradient(150deg, rgb(63, 34, 255), rgb(48, 183, 251), rgb(255, 102, 222));
+    color: white;
+    margin-top: 11rem;
+  }
+
+  form .register {
+    position: absolute;
+    margin-top: 20rem;
+  }
 }
 
-.container-right p {
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  font-family: "Roboto Flex", sans-serif;
-  margin-top: -1vh;
-}
-.container-right img {
-  margin: 3rem auto auto 12rem;
-}
+/* dekstop besar */
 
-.container-left h4 {
-  margin-top: 3rem;
-  margin-left: 3rem;
-  font-family: "Roboto Flex", sans-serif;
-  font-weight: 500;
-  margin-bottom: 2rem;
-}
+@media (min-width: 1400px) {
+  .container .container-left {
+    width: 40%;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 0px 0px 7px rgb(102, 102, 102);
+    padding-top: 2rem;
+  }
 
-.container-left form .LName {
-  margin-left: 3rem;
-}
+  .container .container-right {
+    width: 60%;
+    height: 550px;
+    background-image: linear-gradient(180deg, rgb(158, 155, 252), rgb(143, 92, 173));
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 2px 0px 7px rgb(102, 102, 102);
+  }
 
-.container-left form .iUser {
-  display: block;
-  margin-left: 3rem;
-  border: none;
-  width: 350px;
-  border-bottom: solid 1px black;
-  margin-bottom: 1rem;
-  outline: none;
-}
+  .container-right h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 48px;
+  }
 
-.container-left form .LPass {
-  margin-left: 3rem;
-}
+  .container-right p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Roboto Flex", sans-serif;
+    margin-top: -1vh;
+  }
+  .container-right img {
+    margin: 3rem auto auto 16rem;
+  }
 
-.container-left form .iPass {
-  display: block;
-  margin-left: 3rem;
-  border: none;
-  width: 350px;
-  border-bottom: solid 1px black;
-  margin-bottom: 1rem;
-  outline: none;
-}
+  .container-left h4 {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
 
-form .forgot {
-  text-decoration: none;
-  margin-left: 17rem;
-}
+  form {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
 
-form .submit {
-  margin-left: 7rem;
-  width: 220px;
-}
+  .container-left form .LName {
+    position: absolute;
+    margin-right: 6.5rem;
+  }
 
-form .submit {
-  background-image: linear-gradient(150deg, rgb(63, 34, 255), rgb(48, 183, 251), rgb(255, 102, 222));
-  color: white;
-}
+  .container-left form .iUser {
+    position: absolute;
+    display: block;
+    border: none;
+    width: 75%;
+    border-bottom: solid 1px rgb(0, 0, 0);
+    background-color: transparent;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    text-align: center;
+  }
 
-form {
-  position: relative;
-}
+  .container-left form .LPass {
+    position: absolute;
+    margin-top: 4rem;
+    margin-right: 6.5rem;
+  }
 
-form .eye-unlock {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 5.5rem;
-  margin-left: 23.3rem;
+  .container-left form .iPass {
+    position: absolute;
+    display: block;
+    border: none;
+    width: 75%;
+    border-bottom: solid 1px rgb(0, 0, 0);
+    background-color: transparent;
+    margin-top: 5.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+  }
+
+  form .eye-unlock {
+    position: absolute;
+    width: 30px;
+    margin-left: 26.3rem;
+  }
+
+  form .forgot {
+    position: absolute;
+    text-decoration: none;
+    margin-top: 8rem;
+    margin-right: -7rem;
+  }
+
+  form .submit {
+    width: 250px;
+    height: 45px;
+    background-image: linear-gradient(150deg, rgb(63, 34, 255), rgb(48, 183, 251), rgb(255, 102, 222));
+    color: white;
+    margin-top: 11rem;
+  }
+
+  form .register {
+    position: absolute;
+    margin-top: 20rem;
+  }
 }
