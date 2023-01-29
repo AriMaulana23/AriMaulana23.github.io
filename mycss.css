@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap");
+
+body {
+  background-image: linear-gradient(100deg, rgb(156, 120, 255), rgb(115, 23, 161));
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 650px;
+  justify-content: center;
+}
+
+.container .container-left {
+  width: 450px;
+  height: 512px;
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: 0px 0px 7px rgb(102, 102, 102);
+}
+
+.container .container-right {
+  width: 678px;
+  height: 512px;
+  background-image: linear-gradient(180deg, rgb(158, 155, 252), rgb(143, 92, 173));
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 2px 0px 7px rgb(102, 102, 102);
+}
+
+.container-right h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 48px;
+}
+
+.container-right p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Roboto Flex", sans-serif;
+  margin-top: -1vh;
+}
+.container-right img {
+  margin: 3rem auto auto 12rem;
+}
+
+.container-left h4 {
+  margin-top: 3rem;
+  margin-left: 3rem;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.container-left form .LName {
+  margin-left: 3rem;
+}
+
+.container-left form .iUser {
+  display: block;
+  margin-left: 3rem;
+  border: none;
+  width: 350px;
+  border-bottom: solid 1px black;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.container-left form .LPass {
+  margin-left: 3rem;
+}
+
+.container-left form .iPass {
+  display: block;
+  margin-left: 3rem;
+  border: none;
+  width: 350px;
+  border-bottom: solid 1px black;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+form .forgot {
+  text-decoration: none;
+  margin-left: 17rem;
+}
+
+form .submit {
+  margin-left: 7rem;
+  width: 220px;
+}
+
+form .submit {
+  background-image: linear-gradient(150deg, rgb(63, 34, 255), rgb(48, 183, 251), rgb(255, 102, 222));
+  color: white;
+}
+
+form {
+  position: relative;
+}
+
+form .eye-unlock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 5.5rem;
+  margin-left: 23.3rem;
+}
